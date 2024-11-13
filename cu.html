@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <h1>Contact Us</h1>
+        <a href=" index.html">Home </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=" content.html" class="hover-link">Content
+            <span class="hover-content" h>Here is the content</span>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=" cu.html">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="login.html">Login</a>
+    </header>
+    
+  <div class="container">
+    
+    <p>We'd love to hear from you! Fill out the form below and we’ll <br>get back to you as soon as possible.</p>
+    <form id="contactForm">
+      <label for="name" class="fh">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email" class="fh">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject" class="fh">Subject:</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message" class="fh">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <script>
+    // Select the contact form
+const contactForm = document.getElementById('contactForm');
+
+// Add a submit event listener
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Simulate form submission logic (replace with actual backend API call if needed)
+  setTimeout(() => {
+    alert('Thank you! Your message has been sent successfully.');
+    window.location.href = 'index.html'; // Redirect to home page
+  }, 1000); // Simulate a short delay (e.g., waiting for a response)
+});
+
+</script>
+</body>
+</html>

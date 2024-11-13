@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: honeydew;
+   
+}
+header, footer{
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.container{
+    text-align: center;
+    margin-top:10px;
+}
+.fh{
+    text-align: left;
+    margin-left: 615px;
+    padding-top: 10px;
+}
+h1 {
+    margin: 0;
+}
+#h12{
+    text-align: center;
+}
+#signupForm{
+    text-align: left;
+    margin: 10px;
+}
+label{
+    display: block;
+}
+.form-group{
+    margin: 20px;
+}
+h2{
+    font-size: 30px;
+}
+section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.drone-types, .drone-uses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.hidden {
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #f4f4f9;
+}
+.li{
+    text-decoration: none;
+    color:blue;
+}
+.hover-link {
+    position: relative;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+}
+
+/* Hide content by default */
+.hover-link .hover-content {
+    visibility: hidden;
+    width: 200px;
+    background-color: #f9f9f9;
+    color: #000;
+    text-align: bottom;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -300%; /* Position above the link */
+    left: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show content when hovering over the link */
+.hover-link:hover .hover-content {
+    visibility: visible;
+    opacity: 1;
+}
+.card1{
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="sign.css">
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Simple validation (Hardcoded credentials for demo)
+      if (username && password) {
+        alert('Login successfully!');
+        window.location.href = 'index.html';// Redirect to Home Page
+      } else {
+        alert('Invalid username or password.');
+      }
+    }
+    function goBack() {
+      window.history.back(); // Go back to the previous page
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button onclick="login()" >Login</button>
+    <button onclick="goBack()" style="margin: 10px;">Back</button>
+    <p>Don't have an account? <a href="sign.html">Sign up</a></p>
+  </div>
+</body>
+</html>
